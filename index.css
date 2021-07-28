@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root {
+    --primary-color: #2c2517;
+    --border-radius: 8px;
+    --text-area-color: #cbb691;
+    --text-color: #b59e74
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive, sans-serif;
+    background-image: linear-gradient(#5e4e32, #c7b595, #c5c795);
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--primary-color);
+    font-size: xx-large;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    min-height: 60vh;
+}
+
+#txt-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#button {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+textarea, #output {
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    min-height: 8.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #2c2c2c;
+    background-color: var(--text-area-color);
+    font-size: 1.3rem;
+}
+
+::placeholder{
+    color: #443820;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#btn-translate {
+    border: navajowhite;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+
+#btn-translate:hover{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1.8rem;
+}
